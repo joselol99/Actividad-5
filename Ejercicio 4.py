@@ -35,8 +35,8 @@ class EquipoMaratonApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Registro de Equipo de Maratón")
-        self.root.geometry("600x500")
-        self.root.resizable(False, False)
+        self.root.state('zoomed')  # Ventana en pantalla completa en Windows
+        self.root.resizable(True, True)
         
         self.equipo = None
         self.programadores = []
